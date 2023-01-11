@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://icons-for-free.com/download-icon-Moon-1320568043578978300_512.png"
+      type="image/x-icon"
+      <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    />
+  </head>
+  <style>
+    .header {
+      width: 100%;
+    }
+
+    .header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <img
+        src="https://www.zooparc.nl/wp-content/uploads/2016/07/dieren-zooparc-witte-tijger-1024x683.jpg"
+        alt="Header image"
+      />
+    </div>
+
+    <h2>Contact Forms</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="Mumflr" /><br />
+      <label for="lname">Last name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        value="Fumperdink"
+      /><br /><br />
+      <label for="mail">Email:</label><br />
+      <input
+        type="text"
+        id="mail"
+        name="mail"
+        value="Mumfler@email.com"
+      /><br />
+      <label for="wachtwoord">Wachtwoord:</label><br />
+      <input
+        type="text"
+        id="wachtwoord"
+        name="wachtwoord"
+        value="MumflerFumperdink:D"
+      /><br />
+    </form>
+
+    <form action="/action_page.php">
+      <label for="genders">Gender:</label>
+      <select id="genders" name="genders">
+        <option value="non binary">Non Binary</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </form>
+
+    <p>Choose your favorite media option:</p>
+
+    <form>
+      <input
+        type="radio"
+        id="nieuwsbrief"
+        name="fav_media"
+        value="Nieuwsbrief"
+      />
+      <label for="nieuwsbrief">Nieuwsbrief</label><br />
+      <input type="radio" id="mail" name="fav_media" value="Mail" />
+      <label for="mail">Mail</label><br />
+      <input type="radio" id="post" name="fav_media" value="Media" />
+      <label for="media">Media</label>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
