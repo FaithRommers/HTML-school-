@@ -1,0 +1,13 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: auto;
+  }
+}
+
+.stupid {
+  animation-name: fadein;
+  animation-duration: 1s;
+}
