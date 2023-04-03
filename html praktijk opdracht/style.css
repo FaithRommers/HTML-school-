@@ -141,7 +141,6 @@ footer {
   width: 100%;
   height: auto;
   bottom: 0;
-  position: fixed;
   background-color: rgb(79, 150, 181);
 
   display: flex;

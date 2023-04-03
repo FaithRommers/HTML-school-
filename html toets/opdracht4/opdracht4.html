@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Set the display property of the container to flex */
+      .outer-container {
+        display: grid;
+        border: solid black 3px;
+        padding: 10px;
+
+        grid-template-columns: repeat(3, 33vw);
+
+        width: 100vw;
+      }
+
+      /* Set the flex properties of the items in the container */
+      .item {
+        align-items: center;
+        font-size: 30px;
+
+        height: 100px;
+      }
+
+      .item:nth-child(7) {
+        grid-column: 1/4;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .outer-container {
+          display: grid;
+          border: solid black 3px;
+          padding: 10px;
+
+          grid-template-columns: repeat(2, 50vw);
+        }
+
+        /* Set the flex properties of the items in the container */
+        .item {
+          align-items: center;
+          font-size: 30px;
+
+          height: 100px;
+        }
+
+        .item:nth-child(7) {
+          grid-column: 1/3;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        .outer-container {
+          display: grid;
+          border: solid black 3px;
+          padding: 10px;
+
+          grid-template-columns: 100vw;
+        }
+
+        /* Set the flex properties of the items in the container */
+        .item {
+          align-items: center;
+          font-size: 30px;
+
+          height: 100px;
+        }
+
+        .item:nth-child(7) {
+          grid-column: 1/2;
+        }
+      }
+
+      /* Set the background color of the first two items */
+      .item:nth-child(1),
+      .item:nth-child(4),
+      .item:nth-child(7) {
+        background-color: blue;
+      }
+
+      .item:nth-child(2),
+      .item:nth-child(5) {
+        background-color: green;
+      }
+      .item:nth-child(3),
+      .item:nth-child(6) {
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
